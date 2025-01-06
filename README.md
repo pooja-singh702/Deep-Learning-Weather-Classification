@@ -8,6 +8,8 @@
 #### Brief Description of data & objectives:
 ```
 A deep learning project that utilizes Convolutional Neural Networks (CNN) to predict weather conditions (e.g., rain, fog) based on historical weather data (temperature, humidity, wind speed). The Main objective of neural network project is to analyze and identify behavior of Deep learning techniques on weather data set. Given current changes in climate and spontaneous change in weather conditions, an attempt is being made to see if deep learning can identify any changes such as sudden rains or fog approaching to make better decisions.
+
+
 ```
 
 #### Data Structure and Preprocessing
