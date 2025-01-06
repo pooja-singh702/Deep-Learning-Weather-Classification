@@ -1,10 +1,18 @@
 # Deep-Learning-Weather-Classification
 
-Illustrating Weather Classification Project:
-![Image shows weather image as input and output as text as type of weather image it is]()
+Diag Illustrating CNN Weather Classification Project:
+
+
 ![Weather Classification GIF](https://github.com/pooja-singh702/Deep-Learning-Weather-Classification/blob/main/Untitled%20video%20-%20Made%20with%20Clipchamp.gif)
 
 
+```
+Brief Description of data & objectives:
+
+Main objective of neural network project is to analyze and identify behavior of machine learning techniques on weather data set.
+
+Given current changes in climate and spontaneous change in weather conditions, an attempt is being made to see if machine learning can identify any changes such as sudden rains or fog approaching to make better decisions.
+```
 
 ![Accuracy Metrics for Different Cnn Architectures](https://github.com/user-attachments/assets/f5401cfc-ce55-4817-92d4-61e72e6b6d0a)
 ![Image](https://github.com/user-attachments/assets/c60b02f5-f72d-4645-a6fd-9bafe811c64a)
