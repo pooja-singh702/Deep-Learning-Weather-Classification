@@ -1,17 +1,55 @@
 # Deep-Learning-Weather-Classification
 
-Diag Illustrating Weather Prediction using Convolutional Neural Networks (CNN):
+Video Illustrating Weather Prediction using Convolutional Neural Networks (CNN):
 
 
 ![Weather Classification GIF](https://github.com/pooja-singh702/Deep-Learning-Weather-Classification/blob/main/Untitled%20video%20-%20Made%20with%20Clipchamp.gif)
 
-
+#### Brief Description of data & objectives:
 ```
-Brief Description of data & objectives:
-
 A deep learning project that utilizes Convolutional Neural Networks (CNN) to predict weather conditions (e.g., rain, fog) based on historical weather data (temperature, humidity, wind speed). The Main objective of neural network project is to analyze and identify behavior of Deep learning techniques on weather data set. Given current changes in climate and spontaneous change in weather conditions, an attempt is being made to see if deep learning can identify any changes such as sudden rains or fog approaching to make better decisions.
 ```
 
+#### Data Structure and Preprocessing
+
+```
+The dataset consists of 1,528 weather images, categorized into five classes: cloudy, foggy, shiny, rainy, and sunrise. Each class is stored in its own folder, with images labeled according to the respective folder name. The dataset structure is as follows:
+
+cloudy/
+foggy/
+shiny/
+rainy/
+sunrise/
+Each image in these folders is labeled based on its class folder.
+
+```
+
+#### Data Processing
+
+```
+Images are resized to 300x300 pixels to standardize their dimensions for input into the Convolutional Neural Network (CNN).
+img_read = cv2.resize(img_read, (300, 300))
+This ensures all images are of consistent size, allowing the CNN to process them effectively.
+
+```
+#### Labeling
+
+```
+Labels are assigned to images based on the folder name they are stored in. For example, images in the cloudy folder are labeled as cloudy. This automated labeling system ensures that each image is paired with the correct weather condition.
+
+```
+
+#### Color Channel Adjustment
+
+```
+Since OpenCV loads images in BGR format, but CNNs typically expect RGB, we convert the images by swapping the color channels:
+(b, g, r) = cv2.split(img_read)  # Split into Blue, Green, Red channels
+img_read = cv2.merge([r, g, b])  # Merge into Red, Green, Blue
+This step ensures that the images are correctly formatted for better model performance.
+
+```
+
+#### 
 ![Accuracy Metrics for Different Cnn Architectures](https://github.com/user-attachments/assets/f5401cfc-ce55-4817-92d4-61e72e6b6d0a)
 ![Image](https://github.com/user-attachments/assets/c60b02f5-f72d-4645-a6fd-9bafe811c64a)
 
