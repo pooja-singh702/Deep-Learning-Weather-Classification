@@ -50,13 +50,47 @@ img_read = cv2.merge([r, g, b])  # Merge into Red, Green, Blue
 This step ensures that the images are correctly formatted for better model performance.
 
 ```
-
-#### 
-![Accuracy Metrics for Different Cnn Architectures](https://github.com/user-attachments/assets/f5401cfc-ce55-4817-92d4-61e72e6b6d0a)
-![Image](https://github.com/user-attachments/assets/c60b02f5-f72d-4645-a6fd-9bafe811c64a)
+#### Model Summary
+```
 
 
-Showig How Change in Architecture improved accuracy from 21% in arch1 to 83% in arch2:
+### 1. Model 1: Base Fully Connected Model
+- **Architecture**: Multi-layer fully connected (dense) network with ReLU and Softmax activations.
+- **Performance**: 
+  - Training Accuracy: 67.81%
+  - Test Accuracy: 72.95%
+
+### 2. Model 2: CNN (Convolutional Neural Network)
+- **Architecture**: Convolutional layers (Conv2D), MaxPooling layers, Dropout, and Flatten before the dense layers.
+- **Weight Initialization**: Experimented with Gaussian weight initialization with standard deviations (0.44 and 0.01).
+- **Optimizer**: Used Adam, SGD with momentum, and Nesterov.
+- **Performance**: 
+  - Training Accuracy: 94.09%
+  - Test Accuracy: 78.42%
+
+### 3. Model 3: CNN with Data Augmentation
+- **Augmentation**: Applied data augmentation techniques (e.g., changing hue, saturation, rotation, etc.) to improve generalization.
+- **Performance**:
+  - Training Accuracy: 94.09%
+  - Test Accuracy: 80.82%
+
+### 4. Model 4: VGG19 Transfer Learning
+- **Transfer Learning**: Used the pre-trained VGG19 model with added ReLU and Softmax activations for improved prediction accuracy.
+- **Performance**:
+  - Training Accuracy: 88.70%
+  - Test Accuracy: 88.36%
+
+### 5. Custom Architecture (Your Own Model)
+- **Custom Network**: Developed your own model, adjusting the architecture, layer structures, and optimization strategies.
+- **Outcome**: Significant improvement in accuracy from 21% to 82%.
+
+```
+#### FIG1: Accuracy scores of models , fig2: models with different Architectures 
+![FIG 1 Accuracy Metrics for Different Cnn Architectures](https://github.com/user-attachments/assets/f5401cfc-ce55-4817-92d4-61e72e6b6d0a)
+![FIG 2](https://github.com/user-attachments/assets/c60b02f5-f72d-4645-a6fd-9bafe811c64a)
+
+
+#### Showig How Change in Architecture improved accuracy from 21% in arch1 to 83% in arch2:
 
 #### This Fig Shows Architecture that Improved Accuracy:
 ```
@@ -85,7 +119,7 @@ Layer (type)                Output Shape              Param #
 ```
 
 
-Conclusions:
+#### Conclusions:
 ```
 1. By adding an extra Max-Pooling after each convulational layer, keeping everything else from Arch 1 constant, accuracy for train and test data set increased substantially from ~22% to ~81% for test data whereas reducing a layer and one max pooling after 2 convulations decreased accuracy marginally.
 
