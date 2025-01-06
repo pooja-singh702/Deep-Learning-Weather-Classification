@@ -2,6 +2,8 @@
 
 Illustrating Weather Classification Project:
 ![Image shows weather image as input and output as text as type of weather image it is]()
+![Weather Classification GIF](https://github.com/pooja-singh702/Deep-Learning-Weather-Classification/blob/main/Untitled%20video%20-%20Made%20with%20Clipchamp.gif)
+
 
 
 ![Accuracy Metrics for Different Cnn Architectures](https://github.com/user-attachments/assets/f5401cfc-ce55-4817-92d4-61e72e6b6d0a)
