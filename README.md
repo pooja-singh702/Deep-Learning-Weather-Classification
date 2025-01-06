@@ -1,12 +1,9 @@
 # Deep-Learning-Weather-Classification
 
-Video Illustrating Weather Prediction using Convolutional Neural Networks (CNN):
+#### Video Illustrating Weather Prediction using Convolutional Neural Networks (CNN):
 
-[my video](https://pooja-singh702.github.io/Deep-Learning-Weather-Classification/video.html)
 
-![Description of GIF](https://github.com/pooja-singh702/Deep-Learning-Weather-Classification/blob/1f5781fccaaf2d4e7501014bab6b0669f55da5af/Untitled%20video%20-%20Made%20with%20Clipchamp%20(2).gif){: width="1920" height="1080"}
-
-![Weather Classification GIF](https://github.com/pooja-singh702/Deep-Learning-Weather-Classification/blob/main/Untitled%20video%20-%20Made%20with%20Clipchamp.gif)
+![Weather Classification GIF](https://github.com/pooja-singh702/Deep-Learning-Weather-Classification/blob/1f5781fccaaf2d4e7501014bab6b0669f55da5af/Untitled%20video%20-%20Made%20with%20Clipchamp%20(2).gif)
 
 #### Brief Description of data & objectives:
 ```
