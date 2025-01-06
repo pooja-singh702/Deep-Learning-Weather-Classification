@@ -2,6 +2,7 @@
 
 Video Illustrating Weather Prediction using Convolutional Neural Networks (CNN):
 
+![Description of GIF](path/to/your-gif.gif){: width="1920" height="1080"}
 
 ![Weather Classification GIF](https://github.com/pooja-singh702/Deep-Learning-Weather-Classification/blob/main/Untitled%20video%20-%20Made%20with%20Clipchamp.gif)
 
